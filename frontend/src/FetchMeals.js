@@ -16,7 +16,7 @@ const addMeal = (title, setTitle, setMeal) => {
 };
 
 const editMeal = (mealId, title, setTitle,setMeal, setEditing) => {
-  axios.post(`http://localhost:7000/editMeal`, { _id: mealId, title }).then((data) => {
+  axios.put(`http://localhost:7000/editMeal`, { _id: mealId, title }).then((data) => {
     console.log(data)
     setTitle("")
     setEditing(false)

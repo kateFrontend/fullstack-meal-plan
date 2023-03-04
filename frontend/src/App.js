@@ -14,9 +14,9 @@ function App() {
   }, []);
 
   const updatingInInput = (_id, title) => {
-    setEditing(true)
-    setTitle(title)
-    setMealId(_id)
+    setEditing(true);
+    setTitle(title);
+    setMealId(_id);
   };
 
   return (
@@ -29,17 +29,23 @@ function App() {
         onChange={(e) => setTitle(e.target.value)}
       />
 
-      <button onClick={
-        () => addMeal(title, setTitle, setMeal)
-        }>Add</button>
+      <button
+        onClick={
+          editing
+            ? () => editMeal(mealId, title, setTitle, setMeal, setEditing)
+            : () => addMeal(title, setTitle, setMeal)
+        }
+      >
+        {editing ? "Edit" : "Add"}
+      </button>
 
-      {myMeal.map((meal) => 
+      {myMeal.map((meal) => (
         <MyMeals
           text={meal.title}
           key={meal.id}
           updatingInInput={() => updatingInInput(meal._id, meal.title)}
         />
-      )}
+      ))}
     </div>
   );
 }
