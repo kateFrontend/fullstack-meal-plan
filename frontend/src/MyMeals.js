@@ -2,10 +2,12 @@ import React from "react";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai"
 
 function MyMeals({text, updatingInInput, deleteMeal}) {
-  return <div>
+  return <div className="meal">
     <p>{text}</p>
-    <AiFillEdit onClick={updatingInInput}></AiFillEdit>
-    <AiFillDelete onClick={deleteMeal}></AiFillDelete>
+    <div className="icons">
+    <AiFillEdit className="icon" onClick={updatingInInput}></AiFillEdit>
+    <AiFillDelete className="icon" onClick={deleteMeal}></AiFillDelete>
+    </div>
   </div>;
 }
 

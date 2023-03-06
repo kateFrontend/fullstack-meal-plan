@@ -1,5 +1,5 @@
 body {
-  background: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhlYWx0aHklMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  background: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80");
   background-size: cover;
   min-height: 100vh;
   display: grid;
@@ -18,19 +18,48 @@ input {
   margin-bottom: 20px;
 }
 
+h1 {
+  color: #283139;
+  font-size: 75px;
+  text-shadow: 1px 1px 2px #f7f9fa;
+}
+
 button {
-  padding: 20px 50px 20px 70px;
+  padding: 15px 100px 15px 25px;
   background-color: #024d3d;
   color: white;
   font-size: 20px;
   cursor: pointer;
+  border: 0;
+}
+
+.meal {
+  display: flex;
+  position: relative;
 }
 
 p {
   max-width: 100%;
-  background: beige;
+
+  color: #283139;
   margin-top: 20px;
   padding: 10px 20px;
   width: 600px;
   font-size: 20px;
+  font-weght: bolder;
+  border-bottom: 2px solid #024d3d;
+}
+
+.icons {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  color: #024d3d;
+}
+
+.icon {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
