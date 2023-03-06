@@ -1,14 +1,14 @@
 import axios from "axios";
 
 const getAllMeals = (setMeal) => {
-  axios.get("http://localhost:8000").then(({ data }) => {
+  axios.get("http://localhost:7000").then(({ data }) => {
     console.log(data)
     setMeal(data)
   });
 };
 
 const addMeal = (title, setTitle, setMeal) => {
-  axios.post(`http://localhost:8000/saveMeals`, { title }).then((data) => {
+  axios.post(`http://localhost:7000/saveMeals`, { title }).then((data) => {
     console.log(data)
     setTitle("")
     getAllMeals(setMeal)
@@ -16,7 +16,7 @@ const addMeal = (title, setTitle, setMeal) => {
 };
 
 const editMeal = (mealId, title, setTitle,setMeal, setEditing) => {
-  axios.put(`http://localhost:8000/editMeal`, { _id: mealId, title }).then((data) => {
+  axios.put(`http://localhost:7000/editMeal`, { _id: mealId, title }).then((data) => {
     console.log(data)
     setTitle("")
     setEditing(false)
@@ -24,8 +24,8 @@ const editMeal = (mealId, title, setTitle,setMeal, setEditing) => {
   });
 }
 
-const deleteMeal = (_id, setMeal) => {
-  axios.delete(`http://localhost:8000/deleteMeal`, { _id }).then((data) => {
+const deleteMeal = (mealId, setMeal) => {
+  axios.post(`http://localhost:7000/deleteMeal`, { _id: mealId }).then((data) => {
     console.log(data)
     getAllMeals(setMeal)
   });

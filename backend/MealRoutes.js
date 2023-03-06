@@ -5,7 +5,7 @@ const router = Router();
 
 router.get("/", getMeal);
 router.post("/saveMeals", saveMeals);
-router.delete("/deleteMeal", deleteMeal);
+router.post("/deleteMeal", deleteMeal);
 router.put("/editMeal", editMeal)
 
 module.exports = router;
