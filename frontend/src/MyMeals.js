@@ -1,11 +1,11 @@
 import React from "react";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai"
 
-function MyMeals({text, updatingInInput, deleteMyMeal}) {
+function MyMeals({text, updatingInInput, deleteMeal}) {
   return <div>
     <p>{text}</p>
     <AiFillEdit onClick={updatingInInput}></AiFillEdit>
-    <AiFillDelete onClick={deleteMyMeal}></AiFillDelete>
+    <AiFillDelete onClick={deleteMeal}></AiFillDelete>
   </div>;
 }
 

@@ -18,7 +18,7 @@ mongoose
 app.use(routes);
 
 
-const PORT = 7000 || process.env.port
+const PORT = 8000 || process.env.port
 
 app.listen(PORT, () => {
     console.log(`I'm listenning on port ${PORT}`)
