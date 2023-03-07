@@ -1,5 +1,5 @@
 # Meal Plan
-![cover](./assets/)
+![cover](./assets/meal.jpg)
 
 ## 🦉 Main information
 

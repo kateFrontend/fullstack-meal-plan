@@ -44,7 +44,7 @@ p {
   padding: 10px 20px;
   width: 600px;
   font-size: 20px;
-  font-weght: bolder;
+  font-weight: bold;
   border-bottom: 2px solid #024d3d;
 }
 
@@ -74,6 +74,10 @@ p {
 
 @media (max-width: 500px) {
 
+  h1 {
+    font-size: 50px;
+  }
+
   input {
     width: 90%;
   }
@@ -81,4 +85,14 @@ p {
   p {
     width: 300px;
   }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    right: 0;
+    top: 0;
+  }
+
 }
