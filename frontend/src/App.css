@@ -6,7 +6,6 @@ body {
   place-items: center;
 }
 
-
 input {
   display: block;
   width: 100%;
@@ -40,7 +39,6 @@ button {
 
 p {
   max-width: 100%;
-
   color: #283139;
   margin-top: 20px;
   padding: 10px 20px;
@@ -62,4 +60,25 @@ p {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  body {
+    background-position: center;
+  }
+
+  p {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  input {
+    width: 90%;
+  }
+
+  p {
+    width: 300px;
+  }
 }
