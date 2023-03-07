@@ -3,7 +3,12 @@
 
 ## 🦉 Main information
 
-Fullstack MERN simple Meal Planner application which allows users create, editing and deleting a meal from the list.
+Fullstack MERN (MongoDB for database, Express and Node for backend, and React for frontend) simple Meal Planner application which allows users performing CRUD operations :
+
+- Create a Meal
+- Read meals
+- Update a meal
+- Delete a meal
 
 What is the MERN stack?
 
@@ -16,29 +21,50 @@ MERN stack is a web development framework. It consists of MongoDB, ExpressJS, Re
 
 The project goal: 
 
+- Backend features:
+   - initialize backend using npm and install necessary packages
+   - set up a MongoDB database
+   - set up server using Node.js and Express.js 
+   - set up a database schema using monoose
+   - set up API routes to create, read, update and delete documents from the database
+   - set up controller functions for API routes
+   - testing API using Postman (or Insomnia)
 
-
-
-View Demo and have fun here <a href="" target="_blank">Meal Plan</a> 
+- Frontend features:
+   - unitialize the 'create-react-app frontend' 
+   - install 'axios' and use it to send a GET request to the backend to fetch the data
+   - use useState and useEffect React Hooks to manipulaite with data
+   - create React components and unit them in App.js
+   - styling app with CSS in App.css document
 
 
 ## 🦊 Useful links 
 
-### 
-
-
-```
+### MERN Stack Explained
 
 ```
-
-### 
-
+https://www.mongodb.com/mern-stack
 ```
 
+### MongoDB Basics
+
+```
+https://www.mongodb.com/basics?
 ```
 
+### About Node.js
 
+```
+https://nodejs.org/en/about/
+```
+
+### Express.js guide
+
+```
+https://expressjs.com/en/guide/routing.html
+```
 
 ## ⚡ Built With
 
-This project was bootstrapped with Create React App
+[MongoDB](https://www.mongodb.com/) | [Express.js](https://expressjs.com/) | [React](https://reactjs.org/) 
+| [Node.js](https://nodejs.org/en/)
