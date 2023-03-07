@@ -1,5 +1,5 @@
 # Meal Plan
-![cover](./assets/meal.jpg)
+![cover](./assets/meal-plan.gif)
 
 ## 🦉 Main information
 
@@ -17,7 +17,12 @@ MERN stack is a web development framework. It consists of MongoDB, ExpressJS, Re
 - MongoDB — a document-oriented, No-SQL database used to store the application data.
 - Express(.js) — a framework layered on top of NodeJS, used to build the backend of a site using NodeJS functions and structures.
 - React(.js) — a client-side JavaScript framework. It is a library created by Facebook and it's used to build UI components that create the user interface of the single page web application.
-- Node(.js) — is a single-threaded, open-source, cross-platform runtime environment for building fast and scalable server-side and networking applications.
+- Node(.js) — is a single-threaded, open-source, cross-platform runtime environment for building fast and scalable server-side and networking applications. 
+  #
+
+![image](./assets/meal.jpg)
+
+#
 
 The project goal: 
 
@@ -36,6 +41,7 @@ The project goal:
    - use useState and useEffect React Hooks to manipulaite with data
    - create React components and unit them in App.js
    - styling app with CSS in App.css document
+
 
 
 ## 🦊 Useful links 
